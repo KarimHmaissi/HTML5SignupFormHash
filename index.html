@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>User Signup</title>
+        <meta name="description" content="User signup form that returns a hash of the forms input values.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="margin-top">
+                <h1 class="text-center">Sign up for an account</h1>
+                <p class="text-center">* = Required</p>
+                <form action="#" class="signup-form" id="signup-form">
+                    <div class="column">
+
+                        <label for="first_name">First name*</label>
+                        <input id="first_name" name="full_name" type="text" placeholder="Dave" required="" >
+                        <label for="last_name">Last name*</label>
+                        <input id="last_name" name="last_name" type="text" placeholder="Anderson" required="">
+                        <label for="email">Email address*</label>
+                        <input id="email" name="email" type="email" placeholder="DaveAnderson@gmail.com" required="">
+                    </div>
+                    <div class="column">
+                        <label for="phone_number">Phone number</label>
+                        <input id="phone_number" name="phone_number" type="text" placeholder="0121 555 5555">
+                        <label for="password">Password*</label>
+                        <input id="password" name="password" type="password" required="">
+                    </div>
+                    <div class="column column-full text-center margin-top">
+                        <input id="signup-form-submit" type="submit">
+                        <a href="#" class="signup-form-link hide" id="signup-form-link">Sign Up</a>
+                    </div>
+                </form>
+
+                <div class="code-view text-center margin-top-lg" >
+                    <code id="hash-result">Result will be displayed here as a JSON hash</code>
+                </div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+        <!-- jQuery backup in case the CDN fails -->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <script src="js/formToHash.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            $(function() {
+                main.init();
+            });
+        </script>
+    </body>
+</html>

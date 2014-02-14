@@ -1,0 +1,191 @@
+/* ==========================================================================
+Generic
+========================================================================== */
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #e74c3c;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+body {
+    padding-bottom: 48px;
+}
+
+h1 {
+    font-size: 3.2em;
+    margin: 0.67em 0;
+    font-weight: 300;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container .column {
+    width: 50%;
+    padding: 10px 30px;
+    float: left;
+}
+
+.container .column-full {
+    width: 100%;
+}
+
+/* ==========================================================================
+Form
+========================================================================== */
+
+.signup-form {
+    position: relative;
+}
+
+.signup-form input,
+.signup-form textarea,
+.signup-form select {
+    padding: 5px 10px;
+    display: block;
+    line-height: 1.5;
+    font-size: 1.4em;
+    color: #000;
+    width: 100%;
+}
+
+.signup-form input,
+.signup-form textarea {
+    border: 3px solid #ecf0f1;
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.signup-form label {
+    display: block;
+    padding: 25px 5px 5px 2px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.signup-form .signup-form-link {
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-weight: 300;
+    text-align: center;
+    background-image: none;
+    background-color: #34495e;
+    padding: 12px 48px;
+    border-radius: 5px;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/*Hover/Focus states*/
+.signup-form input:focus,
+.signup-form textarea:focus {
+    outline: none;
+    border: 3px solid #c0392b;
+}
+
+.signup-form .signup-form-link:hover {
+    font-size: 2em;
+}
+
+/*Placeholder styling browser specific*/
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #c0392b;
+    font-style: italic;
+    font-weight: 300;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #c0392b;
+    font-style: italic;
+    font-weight: 300;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #c0392b;
+    font-style: italic;
+    font-weight: 300;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #c0392b;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* ==========================================================================
+Util
+========================================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 28px;
+}
+
+.margin-top-lg {
+    margin-top: 48px;
+}
+
+.hide {
+    display: none;
+}
+
+*,*:after,*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; /*  */
+}
+
+/* Clearfix hack by Nicolas Gallagher:  http://nicolasgallagher.com/micro-clearfix-hack/ */
+.signup-form:before,.signup-form:after {
+    content: " ";
+    display: table;
+}
+
+.signup-form:after {
+    clear: both;
+}
+
+/* ==========================================================================
+Responsive
+========================================================================== */
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .container .column {
+        width: 100%;
+        padding: 10px 10px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .container .column {
+        width: 100%;
+        padding: 10px 10px;
+    }
+}
